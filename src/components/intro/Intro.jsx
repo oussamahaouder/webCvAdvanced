@@ -13,13 +13,13 @@ const Intro = () => {
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Mobile Application Developer</div>
               <div className="i-title-item">Photographer</div>
-              <div className="i-title-item">Content Creator</div>
+              <div className="i-title-item">FullStack Developer</div>
             </div>
           </div>
           <p className="i-desc">
             I design and develop services for customers of all sizes,
             specializing in creating stylish, modern websites, web services and
-            online stores.Looking for a 6 months internship 
+            online stores.
           </p>
         </div>
         <svg

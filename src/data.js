@@ -1,32 +1,32 @@
 export const products = [
     {
-      id: 1,
-      img: "",
-      link: "http://lama.dev",
+      name: "Movies Application ",
+      img: "https://i.ibb.co/C8hDgXw/Whats-App-Image-2022-03-27-at-4-06-27-PM.jpg",
+      link: "https://github.com/oussamahaouder/Movies",
     },
     {
-      id: 2,
+      name: "E-Commerce website (NodeJs) ",
       img: "",
-      link: "http://lama.dev",
+      link: "https://github.com/oussamahaouder/Api",
     },
     {
-      id: 3,
+      name: "E-Commerce website (React Ts) ",
       img: "",
-      link: "http://lama.dev",
+      link: "https://github.com/oussamahaouder/client",
     },
     {
-      id: 4,
+      name: "BugFix for Microsoft SharePoint",
       img: "",
-      link: "http://lama.dev",
+      link: "https://github.com/oussamahaouder/sp-dev-fx-webparts",
     },
     {
       id: 5,
       img: "",
-      link: "http://lama.dev",
+      link: "",
     },
     {
       id: 6,
       img: "",
-      link: "http://lama.dev",
+      link: "",
     },
   ];

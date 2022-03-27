@@ -16,16 +16,12 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p className="a-sub">
-          I am an engineering student in the field of computer science . In search of a position which would help me to utilize my skills developed during my graduate studies and offer me excellent opportunity to develop my career.
-        </p>
         <p className="a-desc">
         My curriculum comprised of courses like Database Systems, Analysis of Algorithms, Web Technologies,
          Software Engineering, Networking, Specification and design of Graphical User interface has assisted me 
          to gain profound knowledge in the field of Computer Science. I studied two years in preparatory 
-         classes in Mohammadia,
-          Morocco in which I learned basic mathematics and algorithmic processing .
-        I am currently studying in EILCO Engineering school In the field of general computer science <br/><br/>
+         classes , in which I learned basic mathematics and algorithmic processing .I am currently a fullstack web developer.
+         <br/><br/>
         
         </p>
       </div>

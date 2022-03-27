@@ -2,6 +2,7 @@ import "./productList.css";
 import Product from "../product/Product";
 import { products } from "../../data";
 
+
 const ProductList = () => {
   return (
     <div className="pl">
@@ -12,12 +13,21 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        {products.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} />
+        
+          
+            {products.map((item) => (
+              <>
+              
+          <Product  link={item.link} name={item.name} />
+          
+          </>
         ))}
-      </div>
+             
+        
+        </div>
     </div>
   );
 };
 
 export default ProductList;
+

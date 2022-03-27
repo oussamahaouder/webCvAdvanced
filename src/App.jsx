@@ -5,7 +5,9 @@ import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
+import{ init } from '@emailjs/browser';
 
+init("user_v7MOGb64xlRhwyQUr2cO1");
 const App = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;

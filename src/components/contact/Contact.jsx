@@ -4,13 +4,16 @@ import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
+
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false)
+  const [prob , setprob] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,9 +31,11 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
+          setprob(true)
         }
       );
-  };
+    };
+   
 
   return (
     <div className="c">
@@ -48,8 +53,8 @@ const Contact = () => {
               oussamahaouder1@gmail.com
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              41 rue de l'ecusserie , Saint Omer , 62500 France
+              <img className="c-icon" src={Address} alt=""  />
+              11 rue andré Gélas , 69320 <br></br>Feyzin 
             </div>
           </div>
         </div>
@@ -58,14 +63,17 @@ const Contact = () => {
             <b>What’s your story?</b>
             <br/> Get in touch. Always available.
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
+          <form ref={formRef} onClick={handleSubmit} >
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
             <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
-            {done && "Thank you..."}
+            {done && "Thank you..." && !done && "problem occured click on the button below" }
+            
+            
           </form>
+          {prob && <form action="mailto:oussamahaouder1@gmail.com"> <button>send email</button></form> }
         </div>
       </div>
     </div>
