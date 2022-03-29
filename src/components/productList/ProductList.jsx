@@ -12,20 +12,19 @@ const ProductList = () => {
          I present you my work 
         </p>
       </div>
-      <div className="pl-list">
-        
-          
-            {products.map((item) => (
-              <>
-              
-          <Product  link={item.link} name={item.name} />
-          
-          </>
-        ))}
-             
-        
-        </div>
+      <div className="pl-list ">
+      {products.map((item) => (
+      
+        <Product link={item.link} img = {item.img} name={item.name}/>
+    
+      ))}
+      </div>
+      
+
     </div>
+    
+        
+    
   );
 };
 

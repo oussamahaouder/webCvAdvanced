@@ -1,7 +1,7 @@
 import "./product.css";
 
 
-const Product = ({name,link}) => {
+const Product = ({name,link,img}) => {
   return (
     <div className="p">
       <div className="p-browser">
@@ -9,9 +9,11 @@ const Product = ({name,link}) => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      <a href={link}>{name}</a>
-      <></>
-    </div>
+        <p className="pl-desc"> 
+        {name}</p>
+        <a href={link}><img src={img} alt="" border="0"/></a>
+        </div>     
+    
   );
 };
 
